@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 — 扑克账本</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 8px; }
+    .subtitle { color: #555; font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 17px; font-weight: 700; color: #ffffff; margin: 32px 0 10px; }
+    p, li { font-size: 15px; color: #aaa; margin-bottom: 10px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .highlight {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .highlight p { color: #00C48C; margin: 0; font-weight: 600; }
+    a { color: #00C48C; text-decoration: none; }
+    .lang-switch { margin-bottom: 32px; }
+    .lang-switch a { color: #555; font-size: 14px; margin-right: 16px; }
+    .lang-switch a.active { color: #00C48C; }
+    footer { margin-top: 60px; color: #333; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="#" class="active" onclick="showLang('zh')">简体中文</a>
+      <a href="#" onclick="showLang('en')">English</a>
+    </div>
+
+    <!-- 中文 -->
+    <div id="zh">
+      <h1>隐私政策</h1>
+      <p class="subtitle">扑克账本 Poker Bankroll &nbsp;·&nbsp; 最后更新：2026年8月</p>
+
+      <div class="highlight">
+        <p>您的牌局数据存储在本机设备上。只有在您主动使用 AI 分析时，相关场次数据才会被发送用于生成复盘。</p>
+      </div>
+
+      <h2>我们收集哪些数据</h2>
+      <p>扑克账本不收集您的姓名、邮箱、电话号码等个人身份信息。您的牌局数据（场次记录、手牌、场所、设置）只存储在您的本机设备中，不会上传。为提供 AI 分析与订阅服务，应用会生成一个随机的匿名标识符——它不包含任何个人信息，也无法用于识别您本人。</p>
+
+      <h2>位置信息</h2>
+      <p>应用会在您新建场次时请求访问位置权限，仅用于自动匹配附近已保存的场所，填写默认设置（如盲注、币种）。</p>
+      <ul>
+        <li>位置数据不会离开您的设备</li>
+        <li>不会存储到任何服务器</li>
+        <li>您可以随时在系统设置中撤销位置权限</li>
+      </ul>
+
+      <h2>AI 分析功能</h2>
+      <p>当您使用 AI 分析本场或生成报告时，场次数据（包含时长、盈亏、盲注级别）会通过加密连接发送给 AI 服务进行分析。</p>
+      <ul>
+        <li>发送内容不包含任何可识别个人身份的信息</li>
+        <li>不包含您的姓名、账号或位置信息</li>
+        <li>若您为场次或手牌填写了笔记，笔记内容会随分析请求一并发送</li>
+        <li>分析请求在处理后不会被永久存储</li>
+      </ul>
+
+      <h2>第三方 SDK</h2>
+      <p>应用集成了以下第三方服务：</p>
+      <ul>
+        <li><strong>RevenueCat</strong>：用于处理订阅和内购。订阅状态与购买记录会与上述匿名标识符关联，以便在您重装或更换设备后恢复会员权益</li>
+        <li><strong>Supabase</strong>：用于 AI 分析请求的身份校验与转发。应用使用匿名登录，不需要您注册账号或提供邮箱</li>
+      </ul>
+      <p>详见 <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat 隐私政策</a> 与 <a href="https://supabase.com/privacy" target="_blank">Supabase 隐私政策</a>。</p>
+
+      <h2>数据安全</h2>
+      <p>所有本地数据存储在 iOS 系统的 SQLite 数据库中，受设备加密保护。敏感设置（如语言偏好）存储在 iOS Keychain 中。</p>
+
+      <h2>数据删除</h2>
+      <p>您可以随时在"设置 → 清除所有数据"中删除所有本地数据。卸载应用也会删除所有相关数据。</p>
+
+      <h2>联系我们</h2>
+      <p>如有隐私相关问题，请发送邮件至：<a href="mailto:lihx325@gmail.com">lihx325@gmail.com</a></p>
+
+      <footer>扑克账本 &nbsp;·&nbsp; 您的私人数据分析教练 &nbsp;·&nbsp; &copy; 2026</footer>
+    </div>
+
+    <!-- English -->
+    <div id="en" style="display:none">
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Poker Bankroll &nbsp;·&nbsp; Last updated: August 2026</p>
+
+      <div class="highlight">
+        <p>Your poker records are stored on your device. Session data is sent out only when you actively request an AI review.</p>
+      </div>
+
+      <h2>What Data We Collect</h2>
+      <p>Poker Bankroll does not collect your name, email address, phone number, or any other personally identifiable information. Your poker records (sessions, hands, venues, settings) are stored exclusively on your device and are never uploaded. To provide AI analysis and subscription services, the app generates a random anonymous identifier that contains no personal information and cannot be used to identify you.</p>
+
+      <h2>Location</h2>
+      <p>The app requests location access when creating a new session, solely to match nearby saved venues and auto-fill defaults (such as stakes and currency).</p>
+      <ul>
+        <li>Location data never leaves your device</li>
+        <li>It is not stored on any server</li>
+        <li>You can revoke location permission at any time in iOS Settings</li>
+      </ul>
+
+      <h2>AI Analysis</h2>
+      <p>When you use AI session analysis or report generation, session data (duration, profit/loss, stakes level) is sent via an encrypted connection to an AI service for processing.</p>
+      <ul>
+        <li>No personally identifiable information is included</li>
+        <li>No name, account, or location data is sent</li>
+        <li>If you have written notes for a session or hand, those notes are sent along with the request</li>
+        <li>Analysis requests are not permanently stored after processing</li>
+      </ul>
+
+      <h2>Third-Party SDKs</h2>
+      <p>The app integrates the following third-party service:</p>
+      <ul>
+        <li><strong>RevenueCat</strong>: Manages subscriptions and in-app purchases. Subscription status and purchase records are linked to the anonymous identifier above so your membership can be restored after reinstalling or changing devices.</li>
+        <li><strong>Supabase</strong>: Authenticates and forwards AI analysis requests. The app uses anonymous sign-in — no account registration or email is required.</li>
+      </ul>
+      <p>See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a> and <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.</p>
+
+      <h2>Data Security</h2>
+      <p>All local data is stored in an iOS SQLite database protected by device encryption. Sensitive settings (such as language preference) are stored in the iOS Keychain.</p>
+
+      <h2>Data Deletion</h2>
+      <p>You can delete all local data at any time via Settings → Clear All Data. Uninstalling the app also removes all associated data.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy-related questions, email: <a href="mailto:lihx325@gmail.com">lihx325@gmail.com</a></p>
+
+      <footer>Poker Bankroll &nbsp;·&nbsp; Your Personal Analytics Coach &nbsp;·&nbsp; &copy; 2026</footer>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('zh').style.display = lang === 'zh' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.querySelectorAll('.lang-switch a').forEach((a, i) => {
+        a.className = (i === 0 && lang === 'zh') || (i === 1 && lang === 'en') ? 'active' : '';
+      });
+      return false;
+    }
+  </script>
+</body>
+</html>
