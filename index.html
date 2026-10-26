@@ -1,155 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>隐私政策 — 扑克账本</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #e0e0e0;
-      line-height: 1.7;
-      padding: 40px 20px 80px;
-    }
-    .container { max-width: 720px; margin: 0 auto; }
-    h1 { font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 8px; }
-    .subtitle { color: #555; font-size: 14px; margin-bottom: 40px; }
-    h2 { font-size: 17px; font-weight: 700; color: #ffffff; margin: 32px 0 10px; }
-    p, li { font-size: 15px; color: #aaa; margin-bottom: 10px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    .highlight {
-      background: #141414;
-      border: 1px solid #222;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin: 20px 0;
-    }
-    .highlight p { color: #00C48C; margin: 0; font-weight: 600; }
-    a { color: #00C48C; text-decoration: none; }
-    .lang-switch { margin-bottom: 32px; }
-    .lang-switch a { color: #555; font-size: 14px; margin-right: 16px; }
-    .lang-switch a.active { color: #00C48C; }
-    footer { margin-top: 60px; color: #333; font-size: 13px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 扑克账本</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; background: #000; color: #e6e6e6; line-height: 1.75; padding: 40px 20px 80px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+  .meta { color: #8b949e; font-size: 14px; margin-bottom: 28px; }
+  h2 { font-size: 17px; font-weight: 600; color: #fff; margin: 32px 0 10px; }
+  p, li { font-size: 15px; color: #c9cdd2; margin-bottom: 10px; }
+  ul { padding-left: 20px; }
+  .card { background: #111; border: 1px solid #222; border-radius: 14px; padding: 16px 18px; margin: 20px 0; }
+  .card p { color: #00c48c; font-weight: 600; margin: 0; }
+  a { color: #00c48c; text-decoration: none; }
+  nav { margin-bottom: 28px; font-size: 14px; }
+  nav a { margin-right: 16px; }
+  hr { border: none; border-top: 1px solid #222; margin: 56px 0 40px; }
+  footer { margin-top: 48px; color: #6e7681; font-size: 13px; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="lang-switch">
-      <a href="#" class="active" onclick="showLang('zh')">简体中文</a>
-      <a href="#" onclick="showLang('en')">English</a>
-    </div>
+<div class="container">
+<nav><a href="#zh">简体中文</a><a href="#en">English</a></nav>
 
-    <!-- 中文 -->
-    <div id="zh">
-      <h1>隐私政策</h1>
-      <p class="subtitle">扑克账本 Poker Bankroll &nbsp;·&nbsp; 最后更新：2026年8月</p>
+<section id="zh" lang="zh-Hans">
+<h1>扑克账本隐私政策</h1>
+<p class="meta">适用版本：1.1.1 及以后 · 生效日期：2026 年 10 月 26 日</p>
 
-      <div class="highlight">
-        <p>您的牌局数据存储在本机设备上。只有在您主动使用 AI 分析时，相关场次数据才会被发送用于生成复盘。</p>
-      </div>
+<div class="card"><p>扑克账本不收集、不上传你的任何个人信息。你的牌局记录只保存在你自己的 iPhone 上。</p></div>
 
-      <h2>我们收集哪些数据</h2>
-      <p>扑克账本不收集您的姓名、邮箱、电话号码等个人身份信息。您的牌局数据（场次记录、手牌、场所、设置）只存储在您的本机设备中，不会上传。为提供 AI 分析与订阅服务，应用会生成一个随机的匿名标识符——它不包含任何个人信息，也无法用于识别您本人。</p>
+<p>扑克账本（以下简称“本 App”）是一款个人牌局记账与数据统计工具，由个人开发者 Haoxuan Li（以下简称“我们”）开发和运营。本政策说明本 App 如何处理与你有关的信息。</p>
 
-      <h2>位置信息</h2>
-      <p>应用会在您新建场次时请求访问位置权限，仅用于自动匹配附近已保存的场所，填写默认设置（如盲注、币种）。</p>
-      <ul>
-        <li>位置数据不会离开您的设备</li>
-        <li>不会存储到任何服务器</li>
-        <li>您可以随时在系统设置中撤销位置权限</li>
-      </ul>
+<h2>一、我们收集哪些信息</h2>
+<p>我们不收集你的任何个人信息。本 App 没有账号与注册功能，不要求你提供姓名、手机号、邮箱或身份证件信息，也不包含任何广告、统计分析或用户追踪工具。</p>
 
-      <h2>AI 分析功能</h2>
-      <p>当您使用 AI 分析本场或生成报告时，场次数据（包含时长、盈亏、盲注级别）会通过加密连接发送给 AI 服务进行分析。</p>
-      <ul>
-        <li>发送内容不包含任何可识别个人身份的信息</li>
-        <li>不包含您的姓名、账号或位置信息</li>
-        <li>若您为场次或手牌填写了笔记，笔记内容会随分析请求一并发送</li>
-        <li>分析请求在处理后不会被永久存储</li>
-      </ul>
+<h2>二、你的牌局记录存储在哪里</h2>
+<p>你在本 App 中填写的场次、账本、场所、级别、金额、时长、筹码记录和备注，以及语言、显示币种等设置，只保存在你设备本地的数据库中，不会上传到我们或任何第三方的服务器。这些数据受 iOS 系统的设备加密保护。</p>
+<p>如果你从旧版本（1.0.x）升级，本 App 会在你的设备上把旧版本的本地记录导入新版本，整个过程只在设备内完成。</p>
 
-      <h2>第三方 SDK</h2>
-      <p>应用集成了以下第三方服务：</p>
-      <ul>
-        <li><strong>RevenueCat</strong>：用于处理订阅和内购。订阅状态与购买记录会与上述匿名标识符关联，以便在您重装或更换设备后恢复会员权益</li>
-        <li><strong>Supabase</strong>：用于 AI 分析请求的身份校验与转发。应用使用匿名登录，不需要您注册账号或提供邮箱</li>
-      </ul>
-      <p>详见 <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat 隐私政策</a> 与 <a href="https://supabase.com/privacy" target="_blank">Supabase 隐私政策</a>。</p>
+<h2>三、位置信息</h2>
+<p>在你新建场次时，本 App 可能请求“使用 App 期间”的位置权限，仅用于在你的设备上匹配附近已保存的场所并填入默认设置。</p>
+<ul>
+  <li>位置数据只在设备内使用，不会上传，也不会被保存到任何服务器；</li>
+  <li>拒绝授权不影响记账功能，你可以手动选择场所；</li>
+  <li>你可以随时在 iOS“设置 › 隐私与安全性 › 定位服务”中关闭授权。</li>
+</ul>
+<p>本 App 不会申请“运动与健身”权限，也不会读取相关数据。</p>
 
-      <h2>数据安全</h2>
-      <p>所有本地数据存储在 iOS 系统的 SQLite 数据库中，受设备加密保护。敏感设置（如语言偏好）存储在 iOS Keychain 中。</p>
+<h2>四、联网与第三方服务</h2>
+<p>本 App 唯一的联网请求是从公开汇率服务 ExchangeRate-API（open.er-api.com，服务方位于境外）获取人民币、美元、港币之间的汇率，用于金额换算。汇率数据由 <a href="https://www.exchangerate-api.com">ExchangeRate-API（Rates By Exchange Rate API）</a> 提供。该请求不包含你的任何记录或个人信息；与所有网络请求一样，汇率服务方可能会看到你的网络 IP 地址。详见其隐私政策：<a href="https://www.exchangerate-api.com/terms">exchangerate-api.com/terms</a>。</p>
+<p>除此之外，本 App 不接入任何第三方 SDK，不与任何第三方共享、转让或公开你的信息。</p>
 
-      <h2>数据删除</h2>
-      <p>您可以随时在"设置 → 清除所有数据"中删除所有本地数据。卸载应用也会删除所有相关数据。</p>
+<h2>五、导出数据</h2>
+<p>当你在“设置 › 导出表格（CSV）”中主动导出时，本 App 会在设备上生成一个表格文件，并通过系统分享面板交给你选择的位置（例如“文件”或其他 App）。文件去向完全由你决定，我们不会收到该文件。</p>
 
-      <h2>联系我们</h2>
-      <p>如有隐私相关问题，请发送邮件至：<a href="mailto:lihx325@gmail.com">lihx325@gmail.com</a></p>
+<h2>六、你的权利</h2>
+<ul>
+  <li>查看与修改：你可以随时在 App 内查看、编辑你的每一条记录；</li>
+  <li>删除：你可以在 App 内删除单条记录；删除本 App 会同时删除设备上的全部本地数据；</li>
+  <li>导出：你可以随时将全部记录导出为 CSV 文件。</li>
+</ul>
+<p>由于我们不持有你的任何数据，我们无法替你恢复已删除的数据，请在删除 App 前自行导出备份。</p>
 
-      <footer>扑克账本 &nbsp;·&nbsp; 您的私人数据分析教练 &nbsp;·&nbsp; &copy; 2026</footer>
-    </div>
+<h2>七、未成年人保护</h2>
+<p>本 App 面向成年人，不面向未满 18 周岁的未成年人提供服务。</p>
 
-    <!-- English -->
-    <div id="en" style="display:none">
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">Poker Bankroll &nbsp;·&nbsp; Last updated: August 2026</p>
+<h2>八、政策更新</h2>
+<p>如果本 App 以后增加需要处理个人信息的功能（例如账号或在线服务），我们会在功能上线前更新本政策，并在 App 内或本页面显著提示。更新后的政策在本页面发布时生效。</p>
 
-      <div class="highlight">
-        <p>Your poker records are stored on your device. Session data is sent out only when you actively request an AI review.</p>
-      </div>
+<h2>九、联系我们</h2>
+<p>如对本政策有任何疑问或建议，请发送邮件至 <a href="mailto:lihx325@gmail.com">lihx325@gmail.com</a>，我们会在 15 个工作日内回复。</p>
+<p>App 备案号：<span id="icp">皖ICP备2026037021号-2A</span></p>
+</section>
 
-      <h2>What Data We Collect</h2>
-      <p>Poker Bankroll does not collect your name, email address, phone number, or any other personally identifiable information. Your poker records (sessions, hands, venues, settings) are stored exclusively on your device and are never uploaded. To provide AI analysis and subscription services, the app generates a random anonymous identifier that contains no personal information and cannot be used to identify you.</p>
+<hr>
 
-      <h2>Location</h2>
-      <p>The app requests location access when creating a new session, solely to match nearby saved venues and auto-fill defaults (such as stakes and currency).</p>
-      <ul>
-        <li>Location data never leaves your device</li>
-        <li>It is not stored on any server</li>
-        <li>You can revoke location permission at any time in iOS Settings</li>
-      </ul>
+<section id="en" lang="en">
+<h1>Poker Bankroll Privacy Policy</h1>
+<p class="meta">Applies to version 1.1.1 and later · Effective October 26, 2026</p>
 
-      <h2>AI Analysis</h2>
-      <p>When you use AI session analysis or report generation, session data (duration, profit/loss, stakes level) is sent via an encrypted connection to an AI service for processing.</p>
-      <ul>
-        <li>No personally identifiable information is included</li>
-        <li>No name, account, or location data is sent</li>
-        <li>If you have written notes for a session or hand, those notes are sent along with the request</li>
-        <li>Analysis requests are not permanently stored after processing</li>
-      </ul>
+<div class="card"><p>Poker Bankroll does not collect or upload any personal information. Your poker records stay on your iPhone.</p></div>
 
-      <h2>Third-Party SDKs</h2>
-      <p>The app integrates the following third-party service:</p>
-      <ul>
-        <li><strong>RevenueCat</strong>: Manages subscriptions and in-app purchases. Subscription status and purchase records are linked to the anonymous identifier above so your membership can be restored after reinstalling or changing devices.</li>
-        <li><strong>Supabase</strong>: Authenticates and forwards AI analysis requests. The app uses anonymous sign-in — no account registration or email is required.</li>
-      </ul>
-      <p>See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a> and <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.</p>
+<p>Poker Bankroll ("the app") is a personal poker bankroll and statistics tool developed by Haoxuan Li ("we"). This policy explains how the app handles information about you.</p>
 
-      <h2>Data Security</h2>
-      <p>All local data is stored in an iOS SQLite database protected by device encryption. Sensitive settings (such as language preference) are stored in the iOS Keychain.</p>
+<h2>What we collect</h2>
+<p>Nothing. The app has no account or sign-up, does not ask for your name, phone number, email or ID, and contains no advertising, analytics or tracking.</p>
 
-      <h2>Data Deletion</h2>
-      <p>You can delete all local data at any time via Settings → Clear All Data. Uninstalling the app also removes all associated data.</p>
+<h2>Where your records are stored</h2>
+<p>Your sessions, ledgers, venues, stakes, amounts, durations, stack updates and notes, as well as settings such as language and display currency, are stored only in a local database on your device. They are never uploaded to us or to any third party, and they are protected by iOS device encryption.</p>
+<p>If you update from version 1.0.x, the app moves your earlier local records into the new version on your device.</p>
 
-      <h2>Contact</h2>
-      <p>For privacy-related questions, email: <a href="mailto:lihx325@gmail.com">lihx325@gmail.com</a></p>
+<h2>Location</h2>
+<p>When you create a session, the app may ask for location access while in use, only to match a nearby saved venue on your device and fill in its defaults. Location data never leaves your device and is not stored on any server. You can decline and pick a venue manually, or turn access off at any time in iOS Settings. The app does not request Motion &amp; Fitness access.</p>
 
-      <footer>Poker Bankroll &nbsp;·&nbsp; Your Personal Analytics Coach &nbsp;·&nbsp; &copy; 2026</footer>
-    </div>
-  </div>
+<h2>Network and third parties</h2>
+<p>The app's only network request fetches exchange rates between CNY, USD and HKD from the public service ExchangeRate-API (open.er-api.com). Exchange rates are provided by <a href="https://www.exchangerate-api.com">ExchangeRate-API (Rates By Exchange Rate API)</a>. The request contains none of your records or personal information; as with any network request, the provider may see your IP address. See <a href="https://www.exchangerate-api.com/terms">exchangerate-api.com/terms</a>. The app includes no other third-party SDKs and shares nothing with third parties.</p>
 
-  <script>
-    function showLang(lang) {
-      document.getElementById('zh').style.display = lang === 'zh' ? 'block' : 'none';
-      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
-      document.querySelectorAll('.lang-switch a').forEach((a, i) => {
-        a.className = (i === 0 && lang === 'zh') || (i === 1 && lang === 'en') ? 'active' : '';
-      });
-      return false;
-    }
-  </script>
+<h2>Exporting data</h2>
+<p>When you choose Settings › Export Spreadsheet (CSV), the app creates a file on your device and hands it to the system share sheet. Where it goes is up to you; we never receive it.</p>
+
+<h2>Your choices</h2>
+<p>You can view, edit and delete any record in the app, and export all records to CSV at any time. Deleting the app deletes all of its local data. Because we hold none of your data, we cannot restore deleted data, so export a copy first if you need one.</p>
+
+<h2>Children</h2>
+<p>The app is intended for adults and is not directed to anyone under 18.</p>
+
+<h2>Changes</h2>
+<p>If a future version adds features that process personal information (such as accounts or online services), we will update this policy before those features are released and point it out in the app or on this page.</p>
+
+<h2>Contact</h2>
+<p>Questions or suggestions: <a href="mailto:lihx325@gmail.com">lihx325@gmail.com</a>.</p>
+<p>App filing: 皖ICP备2026037021号-2A</p>
+</section>
+
+<footer>© 2026 Haoxuan Li · 扑克账本 / Poker Bankroll</footer>
+</div>
 </body>
 </html>
